@@ -1,0 +1,10 @@
+server:
+  port: 8721
+spring:
+  application:
+    name: cloud-stream-customer
+  cloud:
+    stream:
+      bindings:
+        order:
+          group: SH

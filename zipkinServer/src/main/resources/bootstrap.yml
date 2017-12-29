@@ -1,0 +1,9 @@
+server:
+  port: 8700
+
+spring:
+  application:
+    name: zipkin-server
+eureka:
+  instance:
+    instance-id: zipkin-server-8700

@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: zuul-reverse-proxy
+
+server:
+  port: 8600
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    lease-renewal-interval-in-seconds: 30
+    instance-id:  zuul-reverse-proxy-8500
+
+zuul:
+  routes:
+    provider-user:
+      path: /user/**
+      serviceId: provider-user
+      stripPrefix: false
+    feign-service:
+      path: /feign/**
+      serviceId: feign-service
+      stripPrefix: false
+
+endpoints:
+  routes:
+    enabled: true

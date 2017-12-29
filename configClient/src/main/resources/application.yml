@@ -1,0 +1,18 @@
+server:
+  port: 8100
+
+endpoints:
+  env:
+    enabled: true
+
+management:
+  security:
+    enabled: false
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    lease-renewal-interval-in-seconds: 30
+    instance-id:  spring-config-client-8100

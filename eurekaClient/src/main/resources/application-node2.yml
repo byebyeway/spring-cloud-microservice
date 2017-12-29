@@ -1,0 +1,18 @@
+endpoints:
+  health:
+    enabled: true
+
+spring:
+  application:
+    name: service-2
+
+server:
+  port: 8772
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    lease-renewal-interval-in-seconds: 30
+    instance-id: service-2-8772

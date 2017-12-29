@@ -1,0 +1,22 @@
+== Spring Cloud Stream API Document
+
+=== Example of Get POST User API
+Example of curl command:
+
+include::{snippets}/post/api5/curl-request.adoc[]
+
+RequestParams
+
+include::{snippets}/post/api5/request-fields.adoc[]
+
+ResponseBody
+
+include::{snippets}/post/api5/response-fields.adoc[]
+
+Example Request body:
+
+include::{snippets}/post/api5/request-body.adoc[]
+
+Example Response body:
+
+include::{snippets}/post/api5/response-body.adoc[]

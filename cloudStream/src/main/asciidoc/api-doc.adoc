@@ -1,0 +1,107 @@
+== Spring Cloud Stream API Document
+
+=== Example of Get Home API
+Example of curl command:
+
+include::{snippets}/index/curl-request.adoc[]
+
+Example of http request:
+
+include::{snippets}/index/http-request.adoc[]
+
+Example of http response:
+
+include::{snippets}/index/http-response.adoc[]
+
+Response body:
+
+include::{snippets}/index/response-body.adoc[]
+
+=== Example of Get User API
+Example of curl command:
+
+include::{snippets}/user/api2/curl-request.adoc[]
+
+Result
+
+include::{snippets}/user/api2/response-fields.adoc[]
+
+Example of http request:
+
+include::{snippets}/user/api2/http-request.adoc[]
+
+Example of http response:
+
+include::{snippets}/user/api2/http-response.adoc[]
+
+Response body:
+
+include::{snippets}/user/api2/response-body.adoc[]
+
+=== Example of Get UserByPathParameter API
+Example of curl command:
+
+include::{snippets}/user/api3/curl-request.adoc[]
+
+Params
+
+include::{snippets}/user/api3/path-parameters.adoc[]
+
+Result
+
+include::{snippets}/user/api3/response-fields.adoc[]
+
+Example of http request:
+
+include::{snippets}/user/api3/http-request.adoc[]
+
+Example of http response:
+
+include::{snippets}/user/api3/http-response.adoc[]
+
+Response body:
+
+include::{snippets}/user/api3/response-body.adoc[]
+
+=== Example of Get UserByPathParameter API
+Example of curl command:
+
+include::{snippets}/user/api3/curl-request.adoc[]
+
+Params
+
+include::{snippets}/user/api3/path-parameters.adoc[]
+
+Example of http request:
+
+include::{snippets}/user/api3/http-request.adoc[]
+
+Example of http response:
+
+include::{snippets}/user/api3/http-response.adoc[]
+
+Response body:
+
+include::{snippets}/user/api3/response-body.adoc[]
+
+=== Example of Get UserByRequestParameter API
+Example of curl command:
+
+include::{snippets}/user/api4/curl-request.adoc[]
+
+Params
+
+include::{snippets}/user/api4/request-parameters.adoc[]
+
+Example of http request:
+
+include::{snippets}/user/api4/http-request.adoc[]
+
+Example of http response:
+
+include::{snippets}/user/api4/http-response.adoc[]
+
+Response body:
+
+include::{snippets}/user/api4/response-body.adoc[]
+

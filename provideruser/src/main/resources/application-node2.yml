@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: provider-user
+
+server:
+  port: 8782
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    lease-renewal-interval-in-seconds: 30
+    instance-id:  provider-user-2-8782

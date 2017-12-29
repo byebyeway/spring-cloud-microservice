@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: consul-user
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        register: true
+        enabled: true
+        instance-id: consul-user-8711
+        health-check-url: http://192.168.96.52:8711
+
+server:
+  port: 8711

@@ -1,0 +1,10 @@
+<<Chapter1>>
+<<Chapter2>>
+
+anchor:Chapter1[]
+
+include::api-doc.adoc[]
+
+anchor:Chapter2[]
+
+include::userpost.adoc[]

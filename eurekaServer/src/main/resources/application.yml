@@ -1,0 +1,34 @@
+#####Singleton server #####
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: localhost
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 60000
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+############
+
+#spring:
+#  application:
+#    name: server-1
+#
+#server:
+#  port: 8761
+#
+#eureka:
+#  instance:
+#    hostname: localhost-peer1
+#    instance-id: eurka-server-8761
+#  server:
+#    enable-self-preservation: false
+#    eviction-interval-timer-in-ms: 30000
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8762/eureka/

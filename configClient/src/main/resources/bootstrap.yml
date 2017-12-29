@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      profile: prod
+      discovery:
+        enabled: true
+        service-id: spring-config-server
+  application:
+    name: foo

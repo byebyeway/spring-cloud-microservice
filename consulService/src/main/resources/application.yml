@@ -1,0 +1,17 @@
+server:
+  port: 8715
+spring:
+  application:
+    name: consul-Service
+  cloud:
+    consul:
+      discovery:
+        instance-id: consul-sevice-8715
+        enabled: true
+        register: true
+        health-check-url: http://192.168.96.52:8715
+
+turbine:
+  aggregator:
+    clusterConfig: CONSUL-SERVICE
+  appConfig: consul-Service

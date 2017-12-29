@@ -1,0 +1,32 @@
+server:
+  port: 8771
+
+spring:
+  application:
+    name: feign-service
+  cloud:
+    config:
+      uri: http://locahost:8000/
+  zipkin:
+    base-url: http://localhost:8700
+    enabled: true
+  sleuth:
+    sampler:
+      percentage: 1.0
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    lease-renewal-interval-in-seconds: 30
+    instance-id:  feign-service-1-8771
+
+feign:
+  hystrix:
+    enabled: true
+
+endpoints:
+  env:
+    enabled: true
