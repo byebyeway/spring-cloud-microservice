@@ -133,44 +133,7 @@ public class DocTest {
 
 
 
-    @Test
-    public void testAPI5() throws Exception {
 
-        User user = new User();
-        user.setMobileNo("12361234321");
-        user.setName("api5");
-        Gson gson = new Gson();
-        this.mockMvc.perform(post("/api5").contentType(MediaType.APPLICATION_JSON)
-                            .content(gson.toJson(user)))
-                .andExpect(status().isOk())
-                .andDo(document("post/api5",requestFields(
-                        fieldWithPath("mobileNo").description("需要的用户手机号"),
-                        fieldWithPath("id").description("需要的用户ID"),
-                        fieldWithPath("name").description("需要的用户姓名")
-                        )
-                        ,responseFields(
-                        fieldWithPath("id").description("用户ID"+getConstraints(User.class,"id")),
-                        fieldWithPath("name").description("用户姓名"+getConstraints(User.class,"name")),
-                        fieldWithPath("mobileNo").description("手机号"))));
-//                        parameterWithName("mobileNo").description("the added user"))));
-    }
-
-    @Test
-    public void testAPI6() throws Exception {
-
-        User user = new User();
-        user.setMobileNo("12361234321");
-        user.setName("api5");
-        Gson gson = new Gson();
-        final String param = "testuser";
-        this.mockMvc.perform(post("/api6").contentType(MediaType.APPLICATION_JSON)
-                .content(param))
-                .andExpect(MockMvcResultMatchers.content().string(param))
-                .andDo(document("post/api6"
-                ));
-//                .andDo(document("post/api6",requestParameters(
-//                        parameterWithName("user").description("the added user"))));
-    }
 
 
 }
