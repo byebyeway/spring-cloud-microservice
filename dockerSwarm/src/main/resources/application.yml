@@ -1,0 +1,5 @@
+server:
+  port: 8705
+spring:
+  application:
+    name: swarm-application

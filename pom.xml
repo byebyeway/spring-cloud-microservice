@@ -104,5 +104,6 @@
         <module>consulProvider</module>
         <module>cloudStream</module>
         <module>cloudStreamAnother</module>
+        <module>dockerSwarm</module>
     </modules>
 </project>

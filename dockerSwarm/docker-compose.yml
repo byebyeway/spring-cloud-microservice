@@ -1,0 +1,18 @@
+version: "3"
+services:
+  web:
+    image: kzyan/dockerswarm
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          cpus: "0.1"
+          memory: 500M
+      restart_policy:
+        condition: on-failure
+    ports:
+      - "8705:8705"
+    networks:
+      - webnet
+networks:
+  webnet:
