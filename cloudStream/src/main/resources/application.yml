@@ -3,3 +3,9 @@ server:
 spring:
   application:
     name: cloud-stream-merchant
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: 192.168.96.52:9092
+          zkNodes: 192.168.96.52:2181
